@@ -1,7 +1,9 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SOCIALS</title>
 
   <style>
@@ -9,22 +11,27 @@
       font-family: "cour";
       src: url("cour.ttf") format("truetype");
     }
-    img {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  width: 300px;
-}
-    #grass {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-}
 
     body {
       font-family: "cour", sans-serif;
+    }
+
+    #sun {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      width: 100px;
+      height: auto;
+    }
+
+    #grass {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      object-fit: fill;
+      z-index: 10;
     }
   </style>
 </head>
@@ -32,7 +39,9 @@
 <body>
   <h3>my signal:</h3>
   <h3>my telegram:</h3>
-  <img src="sun.png">
-  <img src="grass.png">
+
+  <img src="sun.png" id="sun" alt="sun">
+  <img src="grass.png" id="grass" alt="">
 </body>
 </html>
+```
